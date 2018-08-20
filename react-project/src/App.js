@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import {
+  HashRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom';
+import Currentpage from '../src/Pages/currentPage';
 import './App.css';
 
 class App extends Component {
@@ -13,6 +19,15 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Currentpage />
+        <Router>
+          <div>
+            <Switch>
+              <Route exact path="/" component={Currentpage} />
+              <Route path="/homePage" component={Currentpage} />
+            </Switch>
+          </div>
+        </Router>
       </div>
     );
   }
