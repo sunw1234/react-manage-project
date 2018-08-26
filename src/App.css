@@ -1,0 +1,60 @@
+.App {
+  height: 100%;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+  vertical-align: middle;
+}
+
+.App-header {
+  background-color: #222;
+  height: 90px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.system-layout {
+  flex: 1;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+.system-menu {
+  width: 200px;
+}
+
+.system-content {
+  flex: 1;
+  padding: 16px;
+  background: #f5f5f5;
+}
+.system-content div{
+  background: #fff;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
