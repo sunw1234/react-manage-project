@@ -5,7 +5,7 @@ import 'antd/dist/antd.css';
 import Homepage from './pages/homePage';
 import ListDemo from './pages/listDemo';
 import Menu from './components/menu';
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 
 
@@ -20,8 +20,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          {/* <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome</h1> */}
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome</h1>
         </header>
         <div className='system-layout'>
           <div className='system-menu'>
