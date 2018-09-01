@@ -1,9 +1,12 @@
 import React from 'react';
+import './index.css';
 
 class HomePage extends React.Component {
     render(){
         return(
-            <div>初始化页面</div>
+            <div className='home-page'>
+                <h2>homepage</h2>
+            </div>
         )
     }
 } 

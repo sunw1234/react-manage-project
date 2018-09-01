@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 // import { Menu } from 'antd';
 import 'antd/dist/antd.css';
-import Homepage from './pages/homePage';
+import Homepage from './pages/homepage';
 import ListDemo from './pages/listDemo';
 import Menu from './components/menu';
 import logo from './logo.svg';
