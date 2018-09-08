@@ -4,6 +4,7 @@ import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import 'antd/dist/antd.css';
 import Homepage from './pages/homepage';
 import ListDemo from './pages/listDemo';
+import Conditions from './pages/conditions';
 import Menu from './components/menu';
 import logo from './logo.svg';
 import './App.css';
@@ -33,6 +34,7 @@ class App extends Component {
             <Router>
                 <Switch>
                   <Route path='/homepage' component={Homepage} />
+                  <Route exact path='/conditions' component={Conditions} />
                   <Route exact path='/list' component={ListDemo} />
                   <Redirect exact to='/homepage' component={Homepage} />
                 </Switch>

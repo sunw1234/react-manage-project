@@ -27,6 +27,7 @@ class NavMenu extends React.Component {
                     mode="inline"
                 >
                     <Menu.Item key="homepage">初始页面</Menu.Item>
+                    <Menu.Item key="conditions">条件组</Menu.Item>
                     <Menu.Item key="list">列表页</Menu.Item>
                 </Menu>
             </div>
