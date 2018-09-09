@@ -1,0 +1,119 @@
+.emasd-simplecard{
+    @icon-width: 45px;
+    background: #FFFFFF;
+    border: 1px solid #EFEDED;
+    font-family: PingFang-SC-Regular;
+    color: #000;
+    display: inline-block;
+    min-width: 250px;
+    > .emasd-simplecard-title{
+      position: relative;
+      height: 45px;
+      background: #fff;
+      > div:first-child{
+        width: calc(~'100% - @{icon-width}');
+        text-indent: 15px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+        color: #04152C;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+      }
+      > .emasd-simplecard-icon{
+        width: 45px;
+        height: 45px;
+        padding: 13px;
+        > i{
+          font-size: 18px;
+          color: #9B9EA0;
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+        > i:hover{
+          color: #1D2C41;
+        }
+      }
+      > .emasd-simplecard-more-list{
+        background: #fff;
+        position: absolute;
+        z-index: 1000;
+        top: 45px;
+        right: 0;
+        > div{
+          > ul{
+            border: 1px solid #EBEBEB;
+            box-shadow: 0 0 2px 0 rgba(0,0,0,0.16);
+            padding: 4px 0;
+            li:hover{
+              background: rgba(51,153,255,0.10);;
+            }
+          }
+        }
+      }
+    }
+    > .emasd-simplecard-content-list{
+      > ul{
+        padding: 15px;
+        padding-top: 0;
+        > li{
+          font-size: 13px;
+          line-height: 23px;
+          max-width: 240px;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+          > .emasd-simplecard-main-content{
+            > *{
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  
+    .left{
+      float: left;
+    }
+    .right{
+      float: right;
+    }
+    .clear:after{
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+    .ant-popover-inner-content{
+      padding: 5px 0;
+    }
+    .emasd-menu-more-list{
+      user-select: none;
+      width: 70px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      color: #73777A;
+      font-size: 13px;
+      > *{
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+  
+  .emasd-simplecard:hover{
+    cursor: pointer;
+    > .emasd-simplecard-title{
+      border-top: 3px solid #3399FF;
+      margin-top: -3px;
+    }
+    > .emasd-simplecard-content-list{
+      margin-top: 3px;
+    }
+  }

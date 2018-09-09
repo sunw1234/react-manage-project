@@ -9,6 +9,7 @@ const EMAS_CONFIG = window._CONFIG_ || {
  * 基于axios封装的请求通讯道
  * 暂时没有接入
  */
+
 // 请求示例：
 //  export async function queryPubSubTaskDetail(scope, api, v, taskId, page, pageSize) {
 //   return new Promise(((resolve, reject) => {
