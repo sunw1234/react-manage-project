@@ -1,0 +1,36 @@
+浏览器打开
+open -a /Applications/Google\ Chrome.app --args --disable-web-security --user-data-dir
+换源
+npm config set registry http://registry.npm.alibaba-inc.com
+
+修改远程地址
+git remote set-url origin http://gitlab.alibaba-inc.com/emax-hotpatch/hotpatch.git
+git常用命令:
+
+git status // gss 检查本地有没有未提交的变更
+
+git add . // ga . 暂存变更
+
+git stash  // gsta  把变更压栈，使工作区恢复干净状态
+
+git fetch origin master:master // gfo master:master  同步master分支
+
+git merge master // gm master  合并master分支
+
+git stash pop // gstp  把暂存的变更弹出，继续工作
+
+git diff // gd  检查具体变动
+
+git diff --cached  // gd --cached 检查暂存区里的变动
+
+gd master // 和master分支比较，有哪些变动
+
+git checkout dev origin/dev // 切换本地分支并关联远程分支
+https://www.zhihu.com/question/21995370
+git branch --set-upstream-to=origin/<btanch>  sunw
+"lint":eslint --ext .js src test
+"precommit":"npm run lint"
+切换协议： 
+1. 查看当前remote git remote -v 
+2. 切换到http： git remote set-url https://github.com/username/repository.git 
+3. 切换到ssh： git remote set-url git@github.com:username/repository.git 
