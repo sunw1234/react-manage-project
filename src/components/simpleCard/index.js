@@ -141,7 +141,7 @@ SimpleCard.propTypes = {
   btns: PropTypes.array,
 };
 
-SimpleCard.defaultProps = {
+o9k.defaultProps = {
   header: '',
   items: [],
   btns: [],
